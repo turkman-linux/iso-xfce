@@ -16,5 +16,6 @@ rc-update add eudev
 rc-update add fuse
 rc-update add udhcpc
 rc-update add upowerd
+rc-update add hostname
 ymp clean --allow-oem
 exit 0
