@@ -2,7 +2,7 @@
 #X11 install
 ymp repo --update --allow-oem --ignore-gpg
 ymp it xinit xorg-server xterm freetype xauth xkbcomp xkeyboard-config @x11.drivers --no-emerge --allow-oem
-ymp it elogind shadow pipewire wireplumber libtool firefox-installer mousepad gpicview fuse fuse2 --no-emerge --allow-oem
+ymp it elogind shadow pipewire wireplumber libtool mousepad fuse fuse2 --no-emerge --allow-oem
 ymp it @xfce dejavu adwaita-icon-theme gsettings-desktop-schemas --no-emerge --allow-oem
 echo "startxfce4" > /data/user/root/.xinitrc
 sed -i "s/#USER/USER/g" /etc/conf.d/xinit
