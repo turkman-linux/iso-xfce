@@ -16,7 +16,8 @@ function build(){
     echo "##### $(date) #####" > /output/turkman-$variant$suffix.revdep-rebuild
     mount -t proc proc rootfs/proc
     chroot rootfs ymp rbd --no-color 2>/dev/null | tee -a /output/turkman-$variant$suffix.revdep-rebuild
-    umount -lf rootfs/proc    cd ..
+    umount -lf rootfs/proc
+    cd ..
     rm -rf $variant$suffix
 }
 for variant in xfce; do
